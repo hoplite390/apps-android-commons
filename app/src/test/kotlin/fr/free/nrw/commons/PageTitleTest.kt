@@ -3,12 +3,8 @@ package fr.free.nrw.commons
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.robolectric.RobolectricTestRunner
-import org.robolectric.annotation.Config
 import java.net.URLEncoder
 
-@RunWith(RobolectricTestRunner::class)
-@Config(constants = BuildConfig::class, sdk = intArrayOf(21), application = TestCommonsApplication::class)
 class PageTitleTest {
     @Test
     fun displayTextShouldNotBeUnderscored() {
